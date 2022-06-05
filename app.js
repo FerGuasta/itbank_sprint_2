@@ -2,7 +2,8 @@ let listaPersonas = [];
 let listaMontos = [];
 
 const contribuciones = document.getElementById("contribuciones");
-const resumen = document.getElementById("resumen");
+const total = document.getElementById("total");
+const cadaUno = document.getElementById("cada-uno");
 
 function mostrarContribucion(persona, monto){
     let p = document.createElement('p');
@@ -11,6 +12,7 @@ function mostrarContribucion(persona, monto){
 }
 
 function mostrarResumen(){
+
     let sum = 0;
     
     for (let i = 0; i < listaMontos.length; i++) {
@@ -18,7 +20,8 @@ function mostrarResumen(){
     }
     
     let cada_uno = sum / (listaMontos.length);
-    resumen.innerHTML = "<p> Total: $" + sum + "</p>" + "<p> Cada uno: $" + cada_uno + "</p>"
+    total.innerHTML = "<h6>Total</h6>" + "<p>$" + sum + "</p>"
+    cadaUno.innerHTML = "<h6>Cada Uno</h6>" + "<p>$" + cada_uno + "</p>"
 }
 
 function añadirContribucion(){

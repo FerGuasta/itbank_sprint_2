@@ -19,30 +19,43 @@
             
         </div>
         
-        <div class="row flex-grow-1 justify-content-center">
+        <div class="row flex-grow-1 justify-content-center mb-5">
             
-            <div class="col-9 col-md-3">
-                <h4 class="text-center">Ingresá cuánto pagó cada persona.</h4>
+            <div class="col-9 col-md-3 blurred-neumorph">
 
-                <label class="form-label">Persona</label>
-                <input type="text" class="form-control mb-1" id="persona">
+                <h4 class="text-center mt-5">Ingresá cuánto pagó cada persona.</h4>
 
-                <label  class="form-label">Monto</label>
-                <input type="number" class="form-control" id="monto">
+                <div>
+                    <label class="form-label">Persona</label>
+                    <input type="text" class="form-control " id="persona">
+                </div>
+                <div>
+                    <label  class="form-label">Monto</label>
+                    <input type="number" class="form-control" id="monto">
+                </div>
 
-                <button onclick="añadirContribucion()" type="button" class="btn btn-primary w-100 mt-3">Añadir</button>
+                <button onclick="añadirContribucion()" type="button" class="btn btn-primary mb-4 w-100">Añadir</button>
 
                 
                 
             </div>
-            <div class="col-9 col-md-3">
+            <div class="col-9 col-md-3 blurred-neumorph div-medio">
                 <div class="text-center" id="contribuciones">
-                    <h4 class="text-center mb-5">Contribuciones</h4>
+                    <h4 class="text-center mt-5 mb-5">Contribuciones</h4>
                 </div>
             </div>
-            <div class="col-9 col-md-3">
-                <h4 class="text-center mb-5">Resumen</h4>
-                <div class="text-center" id="resumen"></div>
+            <div class="col-9 col-md-3 blurred-neumorph">
+                
+                <h4 class="text-center mt-5">Resumen</h4>
+                
+                <div class="text-center" id="total">
+
+                </div>
+
+                <div class="text-center mb-5" id="cada-uno">
+
+                </div>
+
             </div>
         </div>
 
